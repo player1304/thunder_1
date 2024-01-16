@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmp0x4hs3kpo"]
+
+[ext_resource type="PackedScene" uid="uid://c0emyun0yr0ox" path="res://player.tscn" id="1_crinu"]
+[ext_resource type="PackedScene" uid="uid://b3lj5ysmldv17" path="res://enemy.tscn" id="2_7ybt6"]
+[ext_resource type="PackedScene" uid="uid://og1sw68y7n8t" path="res://heart_bar.tscn" id="3_d587r"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_crinu")]
+position = Vector2(86, 780)
+scale = Vector2(0.5, 0.5)
+
+[node name="Enemy" parent="." instance=ExtResource("2_7ybt6")]
+position = Vector2(87, 241)
+
+[node name="HeartBar" parent="." instance=ExtResource("3_d587r")]
+offset_left = 19.0
+offset_top = 11.0
+offset_right = 304.0
+offset_bottom = 56.0
