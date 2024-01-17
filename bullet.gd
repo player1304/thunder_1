@@ -24,11 +24,10 @@ func _on_body_entered(body):
 	self.queue_free() # bullet goes away after hit
 
 
-func _on_player_hit():
-	HeartBar.life -= 1
-	print("hit, life = ", str(HeartBar.life))
-	HeartBar.update_health()
-
-
 func _on_enemy_hit():
 	pass # Replace with function body.
+
+
+func _on_player_hit():
+	print("HITTTTTTT")
+	Globals.life -= 1
